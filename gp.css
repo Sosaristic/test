@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table-wrapper{
+    width: 50%;
+    margin: 2rem;
+}
+#table-caption{
+    background-color: rgb(95, 112, 54);
+    padding: 8px;
+}
+#my-table{
+    background-color: rgb(95, 112, 54);
+    text-transform: uppercase;
+    width: 100%;    
+}
+#my-table th, td{
+    padding: 0.5rem;
+    text-align: center;
+    user-select: none;
+    color: blanchedalmond;
+}
+#my-table th{
+    color: rgba(38, 185, 129, 0.5);
+}
+.number-courses{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.add, .calculate{
+    
+    background-color: rgb(0, 56, 130);
+    padding: 6px;
+    margin: 8px;
+    border-radius: 15px;
+    font-size: small;
+    color: lavender;
+    cursor: pointer;
+    user-select: none;
+}
+.add:hover, .calculate:hover{
+    background-color: cornsilk;
+    color: black;
+}
+
+
+#myText{
+    height: 2rem;
+    padding-left: 4px;
+    
+}
+#my-grade, #my-unit{
+    width: 4rem;
+    text-align: center;
+}
+.get-details{
+    margin: 4px;
+    display: none;
+}
+
+.fa-trash{
+    opacity: 0.1;
+}
+.fa-trash:hover{
+color: red;
+opacity: 1;
+}
+
+
+
+
+
+@media only screen and  (max-width: 500px){
+    #my-table{
+        width: 100%;
+         }
+         .table-wrapper{
+            width: 100%;
+            margin-left: 0;
+        }
+}
